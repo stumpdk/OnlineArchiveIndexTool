@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>XML Links Data</title>
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" ></link>-->
+</head>
+<body>
+    <h1>Udfyldelse af archiveIndex</h1>
+    <form action="save.php" method="post">
+        <div class="form-inline">
+            <label for="archiveInformationPackageID">archiveInformationPackageID</label>
+            <input name="archiveInformationPackageID" size="50" type="text">
+        </div>
+        <div class="form-inline">
+            <label for="archivePeriodStart">archivePeriodStart</label>
+            <input name="archivePeriodStart" size="50" type="date">
+        </div>
+        <div class="form-inline">
+            <label for="archivePeriodEnd">archivePeriodEnd</label>
+            <input name="archivePeriodEnd" size="50" type="date">
+        </div>
+        <div class="form-inline">
+            <label for="systemName">Systemnavn</label>
+            <input name="systemName" size="50" type="text">
+        </div>
+        <div class="form-inline">
+            <label for="systemPurpose">systemPurpose</label>
+            <input name="systemPurpose" size="50" type="text">
+        </div>
+        <div class="form-inline">
+            <label for="multipleDataCollection">multipleDataCollection</label>
+            <input name="multipleDataCollection" size="50" type="text">
+        </div>
+        <div class="form-inline">
+            <label for="personalDataRestrictedInfo">personalDataRestrictedInfo</label>
+            <input name="personalDataRestrictedInfo" size="50" type="text">
+        </div>
+        <div class="form-inline">
+            <label for="otherAccessTypeRestrictions">otherAccessTypeRestrictions</label>
+            <input name="otherAccessTypeRestrictions" size="50" type="text">
+        </div>
+        <div class="form-inline">
+            <label for="archiveApproval">archiveApproval</label>
+            <input name="archiveApproval" size="50" type="text">
+        </div>
+        <div class="form-inline">
+            <label for="archiveRestrictions">archiveRestrictions</label>
+            <input name="archiveRestrictions" size="50" type="text">
+        </div>
+        
+
+        <div class="form-inline">
+            <label class="radio-inline">
+                Slutaflevering
+            </label>
+            <label class="radio-inline">
+                <input name="archiveType" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="archiveType" value="false" type="radio">Nej
+            </label>
+        </div>
+
+        <div class="form-inline">
+            <label class="radio-inline">
+                archiveInformationPacketType
+            </label>
+            <label class="radio-inline">
+                <input name="archiveInformationPacketType" value="true" type="radio">Afsluttet periode
+            </label>
+            <label class="radio-inline">
+                <input name="archiveInformationPacketType" value="false" type="radio">Øjebliksbillede
+            </label>
+        </div>
+
+        <div class="form-inline">
+            <label class="radio-inline">
+                komNum
+            </label>
+            <label class="radio-inline">
+                <input name="komNum" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="komNum" value="false" type="radio">Nej
+            </label>
+        </div>
+        
+        
+        <div class="form-inline">
+            <label class="radio-inline">
+                cprNum?
+            </label>
+            <label class="radio-inline">
+                <input name="cprNum" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="cprNum" value="false" type="radio">Nej
+            </label>
+        </div>
+        
+        <div class="form-inline">
+            <label class="radio-inline">
+                matrikNum
+            </label>
+            <label class="radio-inline">
+                <input name="matrikNum" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="matrikNum" value="false" type="radio">Nej
+            </label>
+        </div>
+        
+        <div class="form-inline">
+            <label class="radio-inline">
+                bbrNum?
+            </label>
+            <label class="radio-inline">
+                <input name="bbrNum" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="bbrNum" value="false" type="radio">Nej
+            </label>
+        </div>
+        
+        <div class="form-inline">
+            <label class="radio-inline">
+                WwhoSygKod?
+            </label>
+            <label class="radio-inline">
+                <input name="whoSygKod" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="whoSygKod" value="false" type="radio">Nej
+            </label>
+
+        <div class="form-inline">
+            <label class="radio-inline">
+                containsDigitalDocuments?
+            </label>
+            <label class="radio-inline">
+                <input name="containsDigitalDocuments" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="containsDigitalDocuments" value="false" type="radio">Nej
+            </label>
+        </div>      
+        
+        <div class="form-inline">
+            <label class="radio-inline">
+                searchRelatedOtherRecords?
+            </label>
+            <label class="radio-inline">
+                <input name="searchRelatedOtherRecords" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="searchRelatedOtherRecords" value="false" type="radio">Nej
+            </label>
+        </div>
+        
+        <div class="form-inline">
+            <label class="radio-inline">
+                Er der en saglig sammenhæng mellem digitale dokumenter (findes der et sagsbegreb?)
+            </label>
+            <label class="radio-inline">
+                <input name="systemFileConcept" value="true" type="radio">Ja
+            </label>
+            <label class="radio-inline">
+                <input name="systemFileConcept" value="false" type="radio">Nej
+            </label>
+        </div>        
+        <input name="create_xml" type="hidden" value="true">
+        <input name="create" type="submit" value="Gem">
+    </form>
+</body>
+</html>
